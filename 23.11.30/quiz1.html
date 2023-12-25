@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz1.html</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .frame {
+            width: 1280px;
+            margin: 0 auto;
+        }
+        body > div {
+            border: 2px dashed grey;
+        }
+        body > div > * {
+            border: 2px dashed orangered;
+        }
+        body > div > * > * {
+            border: 2px dashed green;
+        }
+        .sa {
+            display: flex;
+            justify-content: space-around;
+        }
+        .sb {
+            display: flex;
+            justify-content: space-between;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.top2 > ul {
+            padding-left: 0;
+            margin: 0;
+            padding: 10px 0;
+            list-style: none;
+            flex: 9;
+            height: max-content;
+        }
+        div.top2 > ul > li {
+            flex: 1;
+        }
+        div.top2 > div.hamburger {
+            flex: 1;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        div.news div.image > img {
+            width: 386px;
+        }
+        div.news > div.left {
+            flex: 2;
+        }
+        div.news > div.right {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        <div class="top1 frame sb">
+            <div>로고</div>
+            <div class="sa">
+                <div>언어</div>
+                <div>뱅킹</div>
+            </div>
+        </div>
+
+        <div class="top2 frame sb">
+            <ul class="sb">
+                <li class="center"><a href="#">menu1</a></li>
+                <li class="center"><a href="#">menu2</a></li>
+                <li class="center"><a href="#">menu3</a></li>
+                <li class="center"><a href="#">menu4</a></li>
+                <li class="center"><a href="#">menu5</a></li>
+                <li class="center"><a href="#">menu6</a></li>
+                <li class="center"><a href="#">menu7</a></li>
+                <li class="center"><a href="#">menu8</a></li>
+            </ul>
+            <div class="hamburger center">≡</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="text1 frame center">사랑받는</div>
+        <div class="text2 frame center">농업인과</div>
+
+        <div class="news frame sb">
+            <div class="left">
+                <h3>NH 뉴스</h3>
+                <div class="sb">
+                    <div class="image">
+                        <img src="https://www.nhbank.com/upload/nhnews/6052/imgpc_1.jpg">
+                    </div>
+                    <div class="nh-news">
+                        <div>NH뉴스</div>
+                        <h4>NH농협은행, 올원뱅크 생활금융 서비스 신규 오픈 이벤트 실시</h4>
+                        <p>NH농협은행, 올원뱅크 생활금융 서비스 신규 오픈 이벤트 실시</p>
+                        <p>2023-11-06</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>더보기</div>
+                <div class="more">
+                    <div class="card1">
+                        <div>H농협은행,「제1회 퇴.연.숨.고(퇴직연금숨은고⋯</div>
+                        <p>2023-11-03</p>
+                    </div>
+                    <div class="card2">
+                        <div>NH농협은행, 농촌일손돕기와 자산관리 상담 실시</div>
+                        <p>2023-11-03</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="frame sa">
+            <div class="intro">소개</div>
+            <div class="info">경영정보</div>
+        </div>
+
+        <div class="voc frame">
+            고객의 소리
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1 frame">하단 (사상 아님)</div>
+    </div>
+    
+</body>
+</html>
