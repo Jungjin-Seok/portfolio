@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz1.html</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        div.root {
+            border: 2px solid black;
+            width: 900px;
+            margin: auto;
+        }
+        div.top {
+            background-color: lightgray;
+            padding: 20px;
+        }
+        h1 {
+            width: fit-content;
+            margin: auto;
+            background-color: lightskyblue;
+            color: white;
+            padding: 10px;
+        }
+        div.mid {
+            display: flex;
+        }
+        div.left {
+            /* border: 1px dashed red; */
+            flex: 1;
+        }
+        div.left > ul {
+            background-color: #222;
+            color: white;
+            list-style: none;
+            padding-left: 20px;
+        }
+        div.left > ul > li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        div.left > ul > li:hover {
+            background-color: lightskyblue;
+        }
+        div.right {
+            /* border: 1px dashed blue; */
+            padding: 10px;
+            flex: 4;
+        }
+        div.footer > p {
+            border-top: 2px solid #222;
+            width: 90%;
+            margin: 16px auto;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="top">
+            <h1><a href="#">LOGO</a></h1>
+        </div>
+        <div class="mid">
+            <div class="left">
+                <ul>
+                    <li>Menu-1</li>
+                    <li>Menu-2</li>
+                    <li>Menu-3</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>Hello world</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam reprehenderit cumque ullam, quidem tempora eaque earum iusto ducimus voluptatum id doloremque laborum omnis modi rerum hic mollitia obcaecati rem quae!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error molestias at sapiente ratione fugit accusamus quas, expedita ipsam porro soluta asperiores maiores odit cumque, dicta placeat laboriosam voluptates accusantium commodi.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>ⓒcopy</p>
+        </div>
+    </div>
+    
+</body>
+</html>
