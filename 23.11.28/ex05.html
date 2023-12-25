@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05.html</title>
+    <style>
+        div.root {
+            width: 700px;
+            margin: auto;
+        }
+        p.target {
+            border: 1px solid black;
+
+            /* display: none; */
+
+            /* opacity: 0; */
+
+            /* visibility: hidden; */
+
+            height: 0;
+
+            overflow: hidden;
+            transition-duration: 0.2s;
+        }
+        div.root > p:first-child:hover + p.target {
+            /* display: block; */
+            /* opacity: 1; */
+            /* visibility: visible; */
+            height: 63px;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>display: none</h1>
+    <hr>
+
+    <h3>모습이 보이지 않는다. 화면상의 자리차지도 없어진다</h3>
+
+    <div class="root">
+        <p><button>버튼</button></p>
+        <p class="target">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus excepturi quod assumenda adipisci aperiam repellat iure exercitationem nam ut nostrum earum consectetur, nemo perferendis praesentium iste minus tempora dolores harum.
+        </p>
+        <p><img src="danbi.jpg" width="100"></p>
+    </div>
+    
+</body>
+</html>

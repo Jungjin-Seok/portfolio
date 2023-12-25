@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03.html</title>
+    <style>
+        div.box {
+            display: flex;
+            flex-flow: wrap;
+            border: 2px solid black;
+            width: 900px;
+            margin: auto;
+        }
+        div.item {
+            width: 150px;
+            height: 150px;
+            border: 1px solid grey;
+            text-align: center;
+            padding: 10px 0;
+            margin: 10px;
+            transition-duration: 0.5s;
+            background-color: rgb(255, 255, 255);
+            opacity: 0.5;   /* 투명도 */
+            /* 바뀌는 값이 수치로 나타날 수 있는 값이어야 함 */
+        }
+        div.item:hover {
+            opacity: 1;     /* 투명도 */
+            transition-duration: 0.5s;
+            background-color: rgb(250, 235, 215);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>flex를 활용한 여러 아이템 나열</h1>
+    <hr>
+
+    <div class="box">
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+        <div class="item">
+            <img src="danbi.jpg" height="100">
+            <p><strong>단비</strong></p>
+        </div>
+    </div>
+    
+</body>
+</html>
