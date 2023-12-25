@@ -1,0 +1,17 @@
+		반환형	매개변수자료형	DDL종류		?사용여부		실행함수
+
+selectList	List	x		select		x		executeQuery()
+
+insertBook	int	BookDTO		insert		o		executeUpdate()
+
+deleteBook	int	String		delete		o		executeUpdate()
+
+
+=> select 는 executeQuery()로 실행하고, ResultSet으로 결과를 받는다
+
+=> 그외, insert/update/delete는 executeUpdate()로 실행하고, int로 결과를 받는다
+
+=> 매개변수가 없으면 ?도 사용하지 않는다
+
+=> 매개변수가 있으면 ?에 순서대로 값을 넣어주면 된다
+
